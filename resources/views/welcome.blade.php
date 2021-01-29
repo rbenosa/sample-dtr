@@ -446,15 +446,15 @@
 
                         error = data.responseJSON;
 
-                        $.each(error.errors, function(k, v) {
+                            $.each(error.errors, function(k, v) {
 
-                            if (k == 'dtr') {
-                                let dtr_msg = '<div class="invalid-feedback err_msg_dtr">' + v + '</div>';
-                                $('#dtr').addClass('is-invalid')
-                                $('.dtr-wrapper').append(dtr_msg);
-                            }
+                                if (k == 'dtr') {
+                                    let dtr_msg = '<div class="invalid-feedback err_msg_dtr">' + v + '</div>';
+                                    $('#dtr').addClass('is-invalid')
+                                    $('.dtr-wrapper').append(dtr_msg);
+                                }
 
-                        })
+                            })
 
 
                     }

@@ -27,11 +27,11 @@ class Controller extends BaseController
         $data = [
             'date'      => $date->toFormattedDateString(),
             'raw_date'  => $date->toDateString(),
-            'time'      => $date->format('h:i'),
+            'time'      => $date->format('H:i'),
             'users'     => $this->get_users(),
         ];
 
-
+        // dd($data);
         return view('welcome', $data);
     }
 
